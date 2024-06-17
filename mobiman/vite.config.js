@@ -14,6 +14,6 @@ export default defineConfig({
     }
   },
   build: {
-    outDir: '../mobiman-ns/src/SuiteScripts/mobiman-dist'
+    outDir: '../mobiman-ns/src/FileCabinet/SuiteScripts/mobiman/frontend-vue'
   }
 })
