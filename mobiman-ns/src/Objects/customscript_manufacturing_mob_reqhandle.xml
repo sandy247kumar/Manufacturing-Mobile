@@ -1,0 +1,25 @@
+<suitelet scriptid="customscript_manufacturing_mob_reqhandle">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>Manufacturing Mobile Request Handler</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <notifyuser>F</notifyuser>
+  <scriptfile>[/SuiteScripts/requestHandler.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_manufacturing_mobreq_handle">
+      <allemployees>T</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>T</allroles>
+      <audslctrole></audslctrole>
+      <eventtype></eventtype>
+      <isdeployed>T</isdeployed>
+      <isonline>T</isonline>
+      <loglevel>DEBUG</loglevel>
+      <runasrole>ADMINISTRATOR</runasrole>
+      <status>RELEASED</status>
+      <title>Manufacturing Mobile Request Handler</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</suitelet>

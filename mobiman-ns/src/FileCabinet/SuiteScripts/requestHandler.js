@@ -8,7 +8,6 @@ define(["N/record", "N/search"], function (record, search) {
         try {
             var result = '';
             if (context.request.method == "POST") {
-                log.debug("sdfj")
 
                 var body = JSON.parse(context.request.body);
 
@@ -303,6 +302,19 @@ define(["N/record", "N/search"], function (record, search) {
 
     function updateRecord(type, id, fields) {
         try {
+
+            log.debug("fields ==>", fields);
+
+            if (typeof fields == "object") {
+                var res = {};
+                for (const key in fields) {
+                    res[key] = fields[key];
+                }
+            }
+
+            log.debug("res =>", res)
+
+
             return record.submitFields({
                 type: type,
                 id: id,
